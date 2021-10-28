@@ -10,12 +10,13 @@
 
 * ### Créer son compte Azure : https://azure.microsoft.com/fr-fr/free/
 
-* ### Télécharger Tanzu Community Edition : https://tanzucommunityedition.io/docs/latest/cli-installation/
+* ### Télécharger et Installer Tanzu Community Edition sur son poste: https://tanzucommunityedition.io/docs/latest/cli-installation/
+    * ## Tanzu CLI va s'installer
 
 
 ## Section 2 Installation automatisé via l'interface web
 
-* ### Lancer l'interface d'installation avec la commande : tanzu management-cluster create --ui
+* ###  : tanzu management-cluster create --ui
 
 ![Screenshot](./screenshots_tutos/install_tanzu_azure_1.JPG)
 
