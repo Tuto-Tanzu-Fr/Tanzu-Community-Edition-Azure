@@ -1,6 +1,6 @@
 ## Bienvenue sur mon Tuto Tanzu avec Azure
 
-## Section 1 Pré-requis
+## Section 1 Préparation Poste de Travail
 
 * ## Docker desktop : https://docs.docker.com/desktop/windows/install/
 
@@ -15,13 +15,35 @@
 
 <br>
 
-### Section 2 Configuration Azure
+### Section 2 Préparation sur Azure
 
-* ## Créer son APP Regsitration Tanzu et sauvegarder son secret
+* ## Créer son RG 
+
+![Screenshot](./screenshots_tutos/install_tanzu_azure_4.JPG)
+
+* ## APP Regsitration Tanzu et sauvegarder son secret
+
+![Screenshot](./screenshots_tutos/install_tanzu_azure_3.JPG)
+
+<br>
+
+* ## Créer son secret pour son APP Registration
+    * # Attention sauvegarder votre secret car Azure ne l'affiche qu'une fois
+
+![Screenshot](./screenshots_tutos/install_tanzu_azure_7.JPG)
 
 * ## Donner le bon rôle a son APP Registration sur sa subscription
+    * # Donner le rôle Owner a votre APP Registration
 
-* ## Doc officiel vmware : https://docs.vmware.com/en/VMware-Tanzu-Kubernetes-Grid/1.2/vmware-tanzu-kubernetes-grid-12/GUID-mgmt-clusters-azure.html
+![Screenshot](./screenshots_tutos/install_tanzu_azure_8.JPG)
+
+<br>
+
+![Screenshot](./screenshots_tutos/install_tanzu_azure_9.JPG)
+
+* ## Créer une clé SSH
+
+![Screenshot](./screenshots_tutos/install_tanzu_azure_6.JPG)
 
 * ## Commande pour accepter le contrat d'utilisation sur le marketplace Azure : 
 
@@ -30,6 +52,8 @@ Get-AzureRmMarketplaceTerms -Publisher "vmware-inc" -Product "tkg-capi" -Name "k
 ```
 
 <br>
+
+Doc officiel vmware : https://docs.vmware.com/en/VMware-Tanzu-Kubernetes-Grid/1.2/vmware-tanzu-kubernetes-grid-12/GUID-mgmt-clusters-azure.html
 
 ## Section 3 Installation automatisé via l'interface web
 
