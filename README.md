@@ -13,8 +13,25 @@
 * ## Télécharger et Installer Tanzu Community Edition sur son poste: https://tanzucommunityedition.io/docs/latest/cli-installation/
     * ### Tanzu CLI
 
+<br>
 
-## Section 2 Installation automatisé via l'interface web
+### Section 2 Configuration Azure
+
+* ## Créer son APP Regsitration Tanzu et sauvegarder son secret
+
+* ## Donner le bon rôle a son APP Registration sur sa subscription
+
+* ## Doc officiel vmware : https://docs.vmware.com/en/VMware-Tanzu-Kubernetes-Grid/1.2/vmware-tanzu-kubernetes-grid-12/GUID-mgmt-clusters-azure.html
+
+* ## Commande pour accepter le contrat d'utilisation sur le marketplace Azure : 
+
+```
+Get-AzureRmMarketplaceTerms -Publisher "vmware-inc" -Product "tkg-capi" -Name "k8s-1dot21dot2-ubuntu-2004" | Set-AzureRmMarketplaceTerms -Accept
+```
+
+<br>
+
+## Section 3 Installation automatisé via l'interface web
 
 ```
 tanzu management-cluster create --ui
