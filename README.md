@@ -69,3 +69,59 @@ tanzu management-cluster create --ui
 
 <br>
 
+![Screenshot](./screenshots_tutos/install_tanzu_azure_10.JPG)
+
+<br>
+
+![Screenshot](./screenshots_tutos/install_tanzu_azure_11.JPG)
+
+<br>
+
+![Screenshot](./screenshots_tutos/install_tanzu_azure_12.JPG)
+
+<br>
+
+![Screenshot](./screenshots_tutos/install_tanzu_azure_13.JPG)
+
+<br>
+
+![Screenshot](./screenshots_tutos/install_tanzu_azure_14.JPG)
+
+<br>
+
+![Screenshot](./screenshots_tutos/install_tanzu_azure_15.JPG)
+
+<br>
+
+![Screenshot](./screenshots_tutos/install_tanzu_azure_16.JPG)
+
+<br>
+
+![Screenshot](./screenshots_tutos/install_tanzu_azure_17.JPG)
+
+<br>
+
+![Screenshot](./screenshots_tutos/install_tanzu_azure_18.JPG)
+
+## Section 4 Connection au cluster Tanzu CE
+
+```
+tanzu management-cluster get
+```
+<br>
+
+```
+tanzu management-cluster kubeconfig get --admin
+```
+
+<br>
+
+```
+kubectl config use-context tanzu-mgtcluster-admin@tanzu-mgtcluster
+```
+
+<br>
+
+```
+kubectl get nodes
+```
