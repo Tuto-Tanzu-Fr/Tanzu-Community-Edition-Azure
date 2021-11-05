@@ -1,17 +1,23 @@
-# Bienvenue sur mon Tuto Tanzu avec Azure
+# Tuto Installation Tanzu CE sur Azure via Docker Desktop et UI
+
+## Difficulté 2/5
+
+## Connaissances nécessaires :
+* ## Microsoft Azure niveau AZ900 : https://docs.microsoft.com/fr-fr/learn/certifications/exams/az-900
+* ## Configuration Poste de travail Windows 10
 
 # Section 1 Préparation Poste de Travail
 
 * ## Docker desktop : https://docs.docker.com/desktop/windows/install/
 
-* ## Kubectl sur windows : https://kubernetes.io/docs/tasks/tools/install-kubectl-windows/
+* ## Kubectl sur W10 : https://kubernetes.io/docs/tasks/tools/install-kubectl-windows/
 
-* ## Windows terminal : https://docs.microsoft.com/fr-fr/windows/terminal/install
+* ## W10 terminal : https://docs.microsoft.com/fr-fr/windows/terminal/install
 
 * ## Compte Azure : https://azure.microsoft.com/fr-fr/free/
 
-* ## Télécharger et Installer Tanzu Community Edition sur son poste: https://tanzucommunityedition.io/docs/latest/cli-installation/
-    * ### Vous décompresser le ZIP
+* ## Télécharger et installer Tanzu CE sur son poste: https://tanzucommunityedition.io/docs/latest/cli-installation/
+    * ### Décompresser le ZIP 
     * ### Ouvrez un powershell en administrateur et lancer le script install
      * ### Le script va vous installer la CLI Tanzu
      * ### Modifier la variable PATH système pour que la CLI Tanzu soit prise en compte
@@ -39,7 +45,7 @@
 
 <br>
 
-## APP Regsitration Tanzu et sauvegarder son secret
+## Créer son APP Regsitration Tanzu et sauvegarder son secret
 
 <br>
 
@@ -56,8 +62,8 @@
 
 <br>
 
-## Donner le bon rôle a son APP Registration sur sa subscription
-* # Donner le rôle Owner a votre APP Registration
+## Donner le rôle OWNER ou CONTRIBUTOR a son APP Registration sur sa subscription
+* # Donner le rôle OWNER ou CONTRIBUTOR a votre APP Registration
 
 <br>
 
@@ -91,7 +97,7 @@ Get-AzureRmMarketplaceTerms -Publisher "vmware-inc" -Product "tkg-capi" -Name "k
 
 <br>
 
-# Section 3 Installation automatisé via l'interface web
+# Section 3 Installation automatisé via UI
 
 <br>
 
@@ -189,7 +195,7 @@ kubectl config use-context tanzu-mgtcluster-admin@tanzu-mgtcluster
 
 <br>
 
-![Screenshot](./screenshots_tutos/3.JPG)
+![Screenshot](./screenshots_tutos/install_tanzu_connection_3.JPG)
 
 <br>
 
