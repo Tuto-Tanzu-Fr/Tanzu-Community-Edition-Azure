@@ -145,7 +145,9 @@ tanzu management-cluster create --ui
 
 <br>
 
-## Section 4 Connection au cluster Tanzu CE
+# Section 4 Connection au cluster Tanzu CE
+
+## Attention avant de vous lancez vos commandes, vérifier que docker desktop est démarrer avec le cluster 
 
 <br>
 
@@ -155,9 +157,25 @@ tanzu management-cluster get
 
 <br>
 
+## Résultat attendu :
+
+<br>
+
+![Screenshot](./screenshots_tutos/install_tanzu_connection_1.JPG)
+
+<br>
+
 ```
 tanzu management-cluster kubeconfig get --admin
 ```
+
+<br>
+
+## Résultat attendu :
+
+<br>
+
+![Screenshot](./screenshots_tutos/install_tanzu_connection_2.JPG)
 
 <br>
 
@@ -167,8 +185,23 @@ kubectl config use-context tanzu-mgtcluster-admin@tanzu-mgtcluster
 
 <br>
 
+## Résultat attendu :
+
+<br>
+
+![Screenshot](./screenshots_tutos/3.JPG)
+
+<br>
+
 ```
 kubectl get nodes
 ```
+<br>
 
-tanzu package repository add tce-repo --url projects.registry.vmware.com/tce/main:0.9.1 --namespace tanzu-package-repo-global
+## Résultat attendu :
+
+<br>
+
+![Screenshot](./screenshots_tutos/install_tanzu_connection_4.JPG)
+
+<br>
