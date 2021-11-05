@@ -11,7 +11,15 @@
 * ## Compte Azure : https://azure.microsoft.com/fr-fr/free/
 
 * ## Télécharger et Installer Tanzu Community Edition sur son poste: https://tanzucommunityedition.io/docs/latest/cli-installation/
-    * ### Tanzu CLI
+    * ### Vous décompresser le ZIP
+    * ### Ouvrez un powershell en administrateur et lancer le script install
+     * ### Le script va vous installer la CLI Tanzu
+     * ### Modifier la variable PATH système pour que la CLI Tanzu soit prise en compte
+
+     ![Screenshot](./screenshots_tutos/install_tanzu_prerequis_1.JPG)
+    <br>
+     ![Screenshot](./screenshots_tutos/install_tanzu_prerequis_2.JPG)
+
 
 <br>
 
@@ -125,3 +133,5 @@ kubectl config use-context tanzu-mgtcluster-admin@tanzu-mgtcluster
 ```
 kubectl get nodes
 ```
+
+tanzu package repository add tce-repo --url projects.registry.vmware.com/tce/main:0.9.1 --namespace tanzu-package-repo-global
